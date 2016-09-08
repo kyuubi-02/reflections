@@ -2,4 +2,20 @@
 -->empty .git folder is created. it is required to save previous commits.
 
 2.)How is the staging area different from the working directory and the repository? What value do you think it offers?
-staging area is intermediate between working directory and repository. It contains files from working directory that have to be added to repository. It is just a logical concept whereas working directory and repository are actual locations.
+-->staging area is intermediate between working directory and repository. It contains files from working directory that have to be added to repository. It is just a logical concept whereas working directory and repository are actual locations.
+
+3.)How can you use the staging area to make sure you have one commit per logical change?
+-->after actually making the change staging area can be used for confirming the change.Or if more than one logical changes are made together, then staging area can be used to make one by one changes.
+
+4.)What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+-->branches are useful when two different kinds of changes are to be made which are contradictory to each other, to see which one is better. Or when an experimental feature is to be added without disturbing current progress of system.
+
+5.)How do the diagrams help you visualize the branch structure?
+-->diagrams show parent commit to the current commit helping to find which commmit is reachable from which branch
+
+6.)What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+-->result is we get to add new features while working on master. we represent it the way it is so that we get a pathway of commits that are connected.
+
+7.)What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+-->pros: simple merges can save time. 
+   cons: conflicts can be time consuming and tedious.
