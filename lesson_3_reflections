@@ -7,21 +7,23 @@ automatically stay up-to-date with your remote repository?
 
 3.)Describe the differences between forks, clones, and branches.  When would you
 use one instead of another?
--->
+-->A clone is simply a copy of a repository. 
+   A fork isn't a Git concept really, it's more a political/social idea. That is, if some people aren't happy with the way a project is going, they can take the source code and work on it themselves separate from the original developers. That would be considered a fork.
+   A branch is something that is within a repository. Conceptually, it represents a thread of development. You usually have a master branch, but you may also have a branch where you are working on some feature xyz, and another one to fix bug abc. When you have checked out a branch, any commits you make will stay on that branch and not be shared with other branches until you merge them with or rebase them onto the branch in question.
 
 What is the benefit of having a copy of the last known state of the remote
 stored locally?
-
-    Fill in your answer here
+-->If I am about to go without Internet access for a while, for example to work on a plane, I can update my local copy before I leave.  I can do this even if I'm not ready to merge those changes into my own branches yet. Then if I want, I can perform the merge while offline, or I need to know what the remote version is at some point, I have an easy way to access it.
 
 How would you collaborate without using Git or GitHub?  What would be easier,
 and what would be harder?
+-->If I had to collaborate on a coding project without using Git or GitHub (or any other form of version control designed for code), I might suggest that we all make changes to a shared folder, for example, a DropBox folder. This would be a ligter-weight solution than using Git and GitHub. However, if we both wanted to work on the same part of the file, it would be very difficult to avoid clobbering each other's changes.
 
-    Fill in your answer here
+  Real-time collaborative editors like Google Docs are also great for collaboration, but I don't know a good version of Google Docs for code. Even if I did, I would be hesitant to use this approach on code that it's important to keep bug-free.  I would be worried that someone else would add a change that combined with my change to make a bug, and I might not even
+    notice their change!
 
 When would you want to make changes in a separate branch rather than directly in
 master?  What benefits does each approach have?
-
-    Fill in your answer here
+-->I tend to work directly in master more often when I'm working on my own or with just one or two other people.  When working with a large group, though, using branches to keep track of which changes have already been reviewed and approved is extremely helpful.
     
     
